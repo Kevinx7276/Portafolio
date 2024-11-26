@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Leandro Muñoz Duque - Portafolio</title>
+    <link rel="stylesheet" href="./Css/portafolio.css"> 
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <!-- Botón para el menú hamburguesa en dispositivos móviles -->
+        <button class="menu-toggle" onclick="toggleMenu()">≡</button>
+        <!-- Logo del sitio -->
+        <img src="./img/yo.jpeg" alt="Logo del Sitio" id="logo">
+        <h1>Kevin Leandro Muñoz Duque</h1>
+        <h2>Desarrollador Web</h2>
+        <!-- Menú de navegación principal -->
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <div class="header-offset"></div>
+        <div class="section-title-offset"></div>
+        <div class="inicio-content">
+            <h1>Bienvenido a mi portafolio</h1>
+            <h2>¿Qué te gustaría explorar?</h2>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section id="sobre-mi">
+        <div class="header-offset"></div>
+        <div class="section-title-offset"></div>
+        <div class="sobre-mi">
+            <h1>Sobre Mí</h1>
+            <h2>¿Quién soy?</h2>
+            <p>Mi nombre es Kevin Leandro Muñoz Duque, tengo un título en "Análisis y Desarrollo de Software". Soy programador front-end con experiencia en desarrollo web. Mi objetivo es destacar con mis habilidades y destreza, aportando lo mejor de mí en cada proyecto.</p>
+            <div id="imagen">
+                <!-- Imagen de Kevin -->
+                <img src="./img/yo.jpeg" alt="Imagen de Kevin Leandro Muñoz Duque">
+            </div>
+            <div class="contactame">
+                <h2>Contacto</h2>
+                <!-- Información de contacto -->
+                <p><img src="./img/facebook.png" alt="Facebook"> Kevin Muñoz</p>
+                <p><img src="./img/whatsapp.png" alt="WhatsApp"> +57 314 216 6139</p>
+                <p><img src="./img/gmail.com" alt="Gmail"> Kevinx7276@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de habilidades -->
+    <section id="habilidades">
+        <div class="header-offset"></div>
+        <div class="section-title-offset"></div>
+        <div class="habilidades">
+            <h1>Mis Habilidades</h1>
+            <div class="grid-container">
+                <div class="skill-category">
+                    <h2>Lenguajes de Programación</h2>
+                    <div class="skill">
+                        <p>Java</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;"></div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <p>Python</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h2>Herramientas de Diseño</h2>
+                    <div class="skill">
+                        <p>Photoshop</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <div class="header-offset"></div>
+        <div class="section-title-offset"></div>
+        <div class="proyectos">
+            <h1>Mis Proyectos</h1>
+            <div class="proyecto">
+                <h2>Proyecto 1</h2>
+                <p>proyecto formativo sena</p>
+                <!-- Imágenes del proyecto -->
+                <img src="./img/sena1.png" class="sena1" alt="Proyecto Sena 1">
+                <img src="./img/sena2.png" class="sena2" alt="Proyecto Sena 2">
+                <div class="proyecto-link1">
+                    <!-- Enlace para ver más detalles del proyecto -->
+                    <a href="#" class="proyecto-link" onclick="toggleDescription(event)">Ver más</a>
+                    <!-- Descripción del proyecto, oculta por defecto -->
+                    <div class="proyecto-descripcion" style="display: none;">
+                        <p>Este es un proyecto formativo del SENA donde se desarrolló una aplicación web para la gestión de información de los aprendices del programa de formación Análisis y Desarrollo de Software y el Técnico en Programación.</p>
+                        <p><strong>Cómo fue hecho:</strong> En este proyecto, se implementaron diversas tecnologías como HTML, CSS y JavaScript para construir una interfaz interactiva y atractiva. Se utilizó HTML para estructurar el contenido, CSS para estilizar y darle formato, y JavaScript para manejar la interactividad, como mostrar y ocultar descripciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <div class="header-offset"></div>
+        <div class="section-title-offset"></div>
+        <div class="contacto">
+            <h1>Contacto</h1>
+            <p>Para cualquier consulta o colaboración, no dudes en ponerte en contacto conmigo:</p>
+            <!-- Formulario de contacto -->
+            <form action="mailto:Kevinx7276@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer de la página -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 Kevin Leandro Muñoz Duque. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <!-- Enlaces a las redes sociales -->
+            <a href="https://www.facebook.com/profile.php?id=100052703956917" target="_blank" class="social-link">
+                <img src="./img/facebooklogoblanco.png" alt="Facebook">
+            </a>
+            <a href="https://wa.me/573142166139" target="_blank" class="social-link">
+                <img src="./img/whatsapp blanco.png" alt="WhatsApp">
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" class="social-link">
+                <img src="./img/gmail blanco.png" alt="Gmail">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts para la funcionalidad interactiva -->
+<script>
+    // Función para alternar la visibilidad del menú en dispositivos móviles
+    function toggleMenu() {
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('visible');
+    }
+
+    // Función para cerrar el menú
+    function closeMenu() {
+        const nav = document.querySelector('.nav');
+        nav.classList.remove('visible');
+    }
+
+    // Función para alternar la visibilidad de la descripción del proyecto
+    function toggleDescription(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+        const description = event.target.nextElementSibling;
+
+        if (description.style.display === 'none' || description.style.display === '') {
+            description.style.display = 'block';
+            event.target.textContent = 'Ver menos'; // Cambia el texto del enlace a 'Ver menos'
+        } else {
+            description.style.display = 'none';
+            event.target.textContent = 'Ver más'; // Cambia el texto del enlace a 'Ver más'
+        }
+    }
+
+    // Cierra el menú hamburguesa al hacer clic en un enlace del menú principal
+    document.querySelectorAll('.nav-menu a').forEach(anchor => {
+        anchor.addEventListener('click', closeMenu);
+    });
+
+    // Cierra el menú hamburguesa al hacer clic en un enlace del menú de bienvenida
+    document.querySelectorAll('.menu-list a').forEach(anchor => {
+        anchor.addEventListener('click', closeMenu);
+    });
+
+    // Añadir transiciones suaves entre secciones
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+
+        const options = {
+            root: null, // La ventana del navegador
+            rootMargin: '0px',
+            threshold: 0.1 // Se activa cuando al menos el 10% de la sección está en vista
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible'); // Agrega clase 'visible' cuando la sección está en vista
+                } else {
+                    entry.target.classList.remove('visible'); // Remueve la clase cuando la sección no está en vista
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section); // Observa cada sección
+        });
+    });
+</script>
+</body>
+</html>
